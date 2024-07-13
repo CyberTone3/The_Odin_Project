@@ -71,3 +71,37 @@ Numeric conversion, unary +
         let apples = "2"; oranges = "3";
         alert( +apples + +oranges ); // 5
         //The longer variant: alert( Number(apples) + Number(oranges) ); // 5
+
+Data Types and Conditionals:
+    There are 8 basic data types:
+        - Number  - BigInt  - String  - boolean  - Null  - undefined  - Symbol  - Object
+
+    Number: 
+        Represents both integer and floating point numbers. Special numeric values like, infinity, -infinity and NaN also belong to the Number data type. 
+            You can get infinity as a result by the division of 0. Ex: a;ert( 1 / 0 ); // infinity
+
+    BigInt:  
+        Because the Number data type can only safely represent integers no larger than            (2 to the 53rd power -1) (16 digits) and no less than -(2 to the 53rd power -1). 
+        Because not all digits fit into the fixed 64-bit storage. BigInt type has been added to the language to represent integers of arbitrary length. Example:1234567890123456789012345678901234567890n; 
+        * A BigInt value is created by appending "n" to the end of the integer.
+
+    Boolean (logical type):
+        The boolean type only has two values: True and False. (Commonly used for yes/no values).
+        Example:
+            let nameFieldChecked = true; // yes, name field is checked
+            let ageFiledChecked = false; // no, age field is not checked
+        Boolean values also come as a result of comparisons:
+            let isGreater = 4 > 1;
+            alert( isGreater ); // yes or true
+
+    String:
+        In JS, strings are surronded by quotes. JS has three types of quotes: single, double and backticks. 'Hello' "Hello" `Hello`.
+        
+        Double and single quotes generally act the same. You would need to use single quotes if there is a set of double quotes in the string. 
+        
+        Backticks are "extended functionality" quotes. They allow us to embed variables and expressions into the string by wrapping it in ${}.
+        Example: let name = "Tone";
+                // embed a variable 
+                 alert( `Hello, ${name}!` ); // Hello, Tone!
+                // embed an expression
+                 alert( `The result is ${1 + 3}` ); // The result is 4. 
