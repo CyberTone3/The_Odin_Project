@@ -1,4 +1,4 @@
-# Odin_Variables-Operators
+# Odin Project
 
 Variables:
     Variables are like storage containers for data in code. There are three ways to create a variable: var, let, and const. 
